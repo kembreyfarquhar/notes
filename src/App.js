@@ -75,7 +75,7 @@ function App() {
                 className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                 onClick={() => setShowModal(false)}
               >
-                <div className="relative w-3/5 my-6 mx-auto">
+                <div className="relative w-2/5 my-6 mx-auto">
                   {/*content*/}
                   <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                     {/*header*/}

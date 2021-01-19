@@ -60,6 +60,13 @@ const styles = {
     sleek: "font-serif text-yellow-900",
     pride: "font-sans text-gray-800 font-medium",
   },
+  noNotes: {
+    default: "font-sans text-gray-800 m-4 text-lg",
+    cute: "font-sans text-red-800 m-4 text-lg",
+    hacker: "font-mono text-green m-4 text-lg",
+    sleek: "font-serif text-yellow-900 m-4 text-lg",
+    pride: "font-sans text-gray-800 font-medium m-4 text-lg",
+  },
 };
 
 function Home({ history, theme }) {
@@ -96,7 +103,7 @@ function Home({ history, theme }) {
               </div>
             ))
           ) : (
-            <p>No notes</p>
+            <p className={styles.noNotes[theme]}>No notes</p>
           )}
         </div>
       </div>

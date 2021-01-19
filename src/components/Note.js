@@ -17,12 +17,18 @@ const styles = {
       BUTTON +
       "self-start font-mono text-yellow-300 hover:bg-white hover:bg-opacity-20",
     sleek: BUTTON + "self-start font-serif text-gray-800 hover:bg-yellow-50",
+    pride:
+      BUTTON +
+      "self-start font-sans font-bold text-gray-500 hover:bg-black hover:bg-opacity-10",
   },
   deleteBtn: {
     default: BUTTON + "font-sans text-gray-600 hover:bg-red-100",
     cute: BUTTON + "font-sans text-red-600 hover:bg-red-50",
     hacker: BUTTON + "font-mono text-white hover:bg-white hover:bg-opacity-20",
     sleek: BUTTON + "font-serif text-gray-800 hover:bg-yellow-50",
+    pride:
+      BUTTON +
+      "font-sans font-bold text-gray-500 hover:bg-black hover:bg-opacity-10",
   },
   editBtn: {
     default: BUTTON + "font-sans text-blue-600 hover:bg-blue-100",
@@ -30,12 +36,16 @@ const styles = {
     hacker:
       BUTTON + "font-mono text-yellow-300 hover:bg-white hover:bg-opacity-20",
     sleek: BUTTON + "font-serif text-blue-600 hover:bg-yellow-50",
+    pride:
+      BUTTON +
+      "font-sans font-bold text-blue-600 hover:bg-black hover:bg-opacity-10",
   },
   previewContainer: {
     default: PREVIEW_CONTAINER + "border border-gray-300",
     cute: PREVIEW_CONTAINER + "border-2 border-red-300",
     hacker: PREVIEW_CONTAINER + "border-2 border-green",
     sleek: PREVIEW_CONTAINER + "border-4 border-double border-yellow-900",
+    pride: PREVIEW_CONTAINER + "border-2 border-gray-300",
   },
 };
 

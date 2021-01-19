@@ -10,6 +10,7 @@ const themes = {
   cute: "cute",
   hacker: "hacker",
   sleek: "sleek",
+  pride: "pride",
 };
 
 const APP_CONTAINER =
@@ -24,12 +25,15 @@ const styles = {
     cute: APP_CONTAINER + "bg-red-400",
     hacker: APP_CONTAINER + "bg-black",
     sleek: APP_CONTAINER + "bg-yellow-900",
+    pride:
+      APP_CONTAINER + "bg-gradient-to-r from-blue-600 via-pink-600 to-red-600",
   },
   contentContainer: {
     default: CONTENT_CONTAINER + "bg-gray-50 rounded",
     cute: CONTENT_CONTAINER + "bg-red-100 rounded",
     hacker: CONTENT_CONTAINER + "border-2 border-white",
     sleek: CONTENT_CONTAINER + "bg-yellow-100 rounded-lg",
+    pride: CONTENT_CONTAINER + "bg-white rounded-xl",
   },
 };
 
@@ -112,6 +116,14 @@ function App() {
                       >
                         <p className="font-serif text-yellow-900 text-lg">
                           Sleek
+                        </p>
+                      </div>
+                      <div
+                        onClick={() => selectTheme("pride")}
+                        className="h-20 w-20 hover:cursor-pointer hover:opacity-50 shadow rounded flex justify-center items-center bg-gradient-to-r from-blue-600 via-pink-600 to-red-600"
+                      >
+                        <p className="font-sans font-bold text-white text-lg">
+                          Pride
                         </p>
                       </div>
                     </div>

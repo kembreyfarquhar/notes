@@ -21,7 +21,8 @@ const styles = {
   input: {
     default: INPUT + "ring-blue-300 bg-white font-sans text-gray-800",
     cute: INPUT + "ring-red-300 bg-white font-sans text-gray-800",
-    hacker: INPUT + "ring-green-300 bg-gray-200 font-mono text-black",
+    hacker: INPUT + "ring-green bg-gray-200 font-mono text-black",
+    sleek: INPUT + "ring-yellow-900 bg-white font-serif text-gray-800",
   },
   shadow: {
     boxShadow:
@@ -37,8 +38,13 @@ const styles = {
       border: "2px solid rgba(248, 113, 113, 1)",
     },
     hacker: {
-      background: "rgba(52, 211, 153, 1)",
-      border: "2px solid rgba(167, 243, 208, 1)",
+      background: "#249F00",
+      border: "2px solid #3AFF00",
+    },
+    sleek: {
+      background: "rgba(255, 251, 235, 1)",
+      border: "4px double rgba(120, 53, 15, 1)",
+      borderRadius: "4px",
     },
   },
   editor: {
@@ -55,18 +61,27 @@ const styles = {
     hacker: {
       background: "#fff",
       padding: "1rem",
-      border: "2px solid rgba(52, 211, 153, 1)",
+      border: "2px solid #3AFF00",
+    },
+    sleek: {
+      background: "#fff",
+      padding: "1rem",
+      border: "4px double rgba(120, 53, 15, 1)",
+      borderRadius: "4px",
     },
   },
   cancelBtn: {
     default: BUTTON + "font-sans text-gray-600 hover:bg-red-100",
     cute: BUTTON + "font-sans text-red-600 hover:bg-red-50",
-    hacker: BUTTON + "font-mono text-white hover:bg-black",
+    hacker: BUTTON + "font-mono text-white hover:bg-white hover:bg-opacity-20",
+    sleek: BUTTON + "font-serif text-gray-800 hover:bg-yellow-50",
   },
   saveBtn: {
     default: BUTTON + "font-sans text-blue-600 hover:bg-blue-100",
     cute: BUTTON + "font-sans text-gray-600 hover:bg-red-50",
-    hacker: BUTTON + "font-mono text-yellow-400 hover:bg-black",
+    hacker:
+      BUTTON + "font-mono text-yellow-400 hover:bg-white hover:bg-opacity-20",
+    sleek: BUTTON + "font-serif text-blue-600 hover:bg-yellow-50",
   },
 };
 

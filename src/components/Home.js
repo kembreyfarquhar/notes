@@ -17,34 +17,40 @@ const styles = {
   header: {
     default: HEADER + "border-b border-solid border-gray-400",
     cute: HEADER + "border-b-4 border-dotted border-red-400",
-    hacker: HEADER + "border-b-2 border-solid border-green-800",
+    hacker: HEADER + "border-b-2 border-solid border-green-dark",
+    sleek: HEADER + "border-b-4 border-double border-yellow-900",
   },
   headerTitle: {
     default: HEADER_TITLE + "font-sans text-gray-800",
     cute: HEADER_TITLE + "font-sans text-red-800",
-    hacker: HEADER_TITLE + "font-mono text-green-400",
+    hacker: HEADER_TITLE + "font-mono text-green",
+    sleek: HEADER_TITLE + "font-serif text-yellow-900",
   },
   addButton: {
     default: ADD_BUTTON + "font-sans text-blue-600 hover:bg-blue-100",
     cute: ADD_BUTTON + "font-sans text-red-600 hover:bg-red-50",
     hacker:
       ADD_BUTTON +
-      "font-mono text-yellow-500 hover:bg-white hover:bg-opacity-10",
+      "font-mono text-yellow-400 hover:bg-white hover:bg-opacity-10",
+    sleek: ADD_BUTTON + "font-serif font-bold text-blue-600 hover:bg-yellow-50",
   },
   grid: {
     default: GRID + "divide-gray-300",
     cute: GRID + "divide-red-300",
-    hacker: GRID + "divide-green-900",
+    hacker: GRID + "divide-green-dark",
+    sleek: GRID + "divide-yellow-800",
   },
   noteCell: {
     default: NOTE_CELL + "hover:bg-blue-100",
     cute: NOTE_CELL + "hover:bg-red-50",
-    hacker: NOTE_CELL + "hover:bg-white hover:bg-opacity-10",
+    hacker: NOTE_CELL + "hover:bg-white hover:bg-opacity-20",
+    sleek: NOTE_CELL + "hover:bg-yellow-50",
   },
   noteTitle: {
     default: "font-sans text-gray-800",
     cute: "font-sans text-red-800",
-    hacker: "font-mono text-green-300",
+    hacker: "font-mono text-green",
+    sleek: "font-serif text-yellow-900",
   },
 };
 

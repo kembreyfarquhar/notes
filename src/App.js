@@ -5,7 +5,12 @@ import Editor from "./components/Editor";
 import Note from "./components/Note";
 import { useEffect, useState } from "react";
 
-const themes = { default: "default", cute: "cute", hacker: "hacker" };
+const themes = {
+  default: "default",
+  cute: "cute",
+  hacker: "hacker",
+  sleek: "sleek",
+};
 
 const APP_CONTAINER =
   "container min-h-full min-w-full absolute left-0 right-0 top-0 bottom-0 flex flex-row justify-center items-center py-16 ";
@@ -18,11 +23,13 @@ const styles = {
     default: APP_CONTAINER + "bg-gray-700",
     cute: APP_CONTAINER + "bg-red-400",
     hacker: APP_CONTAINER + "bg-black",
+    sleek: APP_CONTAINER + "bg-yellow-900",
   },
   contentContainer: {
     default: CONTENT_CONTAINER + "bg-gray-50 rounded",
     cute: CONTENT_CONTAINER + "bg-red-100 rounded",
     hacker: CONTENT_CONTAINER + "border-2 border-white",
+    sleek: CONTENT_CONTAINER + "bg-yellow-100 rounded-lg",
   },
 };
 
@@ -97,8 +104,14 @@ function App() {
                         onClick={() => selectTheme("hacker")}
                         className="h-20 w-20 hover:cursor-pointer hover:opacity-50 shadow rounded flex justify-center items-center bg-black"
                       >
-                        <p className="font-mono text-green-300 text-lg">
-                          Hacker
+                        <p className="font-mono text-green text-lg">Hacker</p>
+                      </div>
+                      <div
+                        onClick={() => selectTheme("sleek")}
+                        className="h-20 w-20 hover:cursor-pointer hover:opacity-50 shadow rounded flex justify-center items-center bg-yellow-200"
+                      >
+                        <p className="font-serif text-yellow-900 text-lg">
+                          Sleek
                         </p>
                       </div>
                     </div>

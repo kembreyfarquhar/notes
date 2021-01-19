@@ -13,22 +13,29 @@ const styles = {
   homeBtn: {
     default: BUTTON + "self-start font-sans text-blue-600 hover:bg-blue-100",
     cute: BUTTON + "self-start font-sans text-red-700 hover:bg-red-50",
-    hacker: BUTTON + "self-start font-mono text-yellow-400 hover:bg-black",
+    hacker:
+      BUTTON +
+      "self-start font-mono text-yellow-300 hover:bg-white hover:bg-opacity-20",
+    sleek: BUTTON + "self-start font-serif text-gray-800 hover:bg-yellow-50",
   },
   deleteBtn: {
     default: BUTTON + "font-sans text-gray-600 hover:bg-red-100",
     cute: BUTTON + "font-sans text-red-600 hover:bg-red-50",
-    hacker: BUTTON + "font-mono text-white hover:bg-black",
+    hacker: BUTTON + "font-mono text-white hover:bg-white hover:bg-opacity-20",
+    sleek: BUTTON + "font-serif text-gray-800 hover:bg-yellow-50",
   },
   editBtn: {
     default: BUTTON + "font-sans text-blue-600 hover:bg-blue-100",
     cute: BUTTON + "font-sans text-gray-600 hover:bg-red-50",
-    hacker: BUTTON + "font-mono text-yellow-400 hover:bg-black",
+    hacker:
+      BUTTON + "font-mono text-yellow-300 hover:bg-white hover:bg-opacity-20",
+    sleek: BUTTON + "font-serif text-blue-600 hover:bg-yellow-50",
   },
   previewContainer: {
     default: PREVIEW_CONTAINER + "border border-gray-300",
     cute: PREVIEW_CONTAINER + "border-2 border-red-300",
-    hacker: PREVIEW_CONTAINER + "border-2 border-green-300",
+    hacker: PREVIEW_CONTAINER + "border-2 border-green",
+    sleek: PREVIEW_CONTAINER + "border-4 border-double border-yellow-900",
   },
 };
 

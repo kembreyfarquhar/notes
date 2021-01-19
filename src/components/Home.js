@@ -8,10 +8,10 @@ const HEADER_TITLE = "text-xl font-bold ";
 const ADD_BUTTON =
   "font-medium text-2xl px-4 py-2 rounded hover:cursor-pointer transition duration-500 ease-in-out ";
 
-const GRID = "grid grid-cols-1 divide-y w-full h-full overflow-y-scroll ";
+const GRID = "grid grid-cols-1 divide-y w-full overflow-y-scroll ";
 
 const NOTE_CELL =
-  "py-2 px-2 w-full hover:cursor-pointer transition duration-500 ease-in-out ";
+  "py-2 px-2 w-full h-10 hover:cursor-pointer transition duration-500 ease-in-out ";
 
 const styles = {
   header: {

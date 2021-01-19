@@ -88,25 +88,25 @@ function App() {
                     {/*body*/}
                     <div className="relative p-6 flex flex-row flex-wrap w-full justify-evenly">
                       <div
-                        onClick={() => selectTheme("default")}
+                        onClick={() => selectTheme(themes.default)}
                         className={THEME_CONTAINER + "bg-gray-700"}
                       >
                         <p className="font-sans text-white text-lg">Default</p>
                       </div>
                       <div
-                        onClick={() => selectTheme("cute")}
+                        onClick={() => selectTheme(themes.cute)}
                         className={THEME_CONTAINER + "bg-red-200"}
                       >
                         <p className="font-sans text-red-700 text-lg">Cute</p>
                       </div>
                       <div
-                        onClick={() => selectTheme("hacker")}
+                        onClick={() => selectTheme(themes.hacker)}
                         className={THEME_CONTAINER + "bg-black"}
                       >
                         <p className="font-mono text-green text-lg">Hacker</p>
                       </div>
                       <div
-                        onClick={() => selectTheme("sleek")}
+                        onClick={() => selectTheme(themes.sleek)}
                         className={THEME_CONTAINER + "bg-yellow-200"}
                       >
                         <p className="font-serif text-yellow-900 text-lg">
@@ -114,7 +114,7 @@ function App() {
                         </p>
                       </div>
                       <div
-                        onClick={() => selectTheme("pride")}
+                        onClick={() => selectTheme(themes.pride)}
                         className={
                           THEME_CONTAINER +
                           "bg-gradient-to-r from-blue-600 via-pink-600 to-red-600"

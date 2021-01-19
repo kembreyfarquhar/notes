@@ -19,6 +19,9 @@ const APP_CONTAINER =
 const CONTENT_CONTAINER =
   "container w-full md:w-4/5 lg:w-3/5 h-4/5 px-4 mx-4 flex flex-col shadow-xl ";
 
+const THEME_CONTAINER =
+  "h-20 w-20 hover:cursor-pointer hover:opacity-80 hover:shadow-xl shadow rounded flex justify-center items-center m-4 transition duration-200 ease-in-out ";
+
 const styles = {
   appContainer: {
     default: APP_CONTAINER + "bg-gray-700",
@@ -75,44 +78,36 @@ function App() {
                 className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                 onClick={() => setShowModal(false)}
               >
-                <div className="relative w-2/5 my-6 mx-auto">
+                <div className="relative w-full md:w-3/5 lg:w-2/5 mx-6 my-6">
                   {/*content*/}
                   <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                     {/*header*/}
-                    <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t">
-                      <h3 className="text-3xl font-semibold">Select theme</h3>
-                      <button
-                        className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                        onClick={() => setShowModal(false)}
-                      >
-                        <span className="bg-transparent text-gray-800 opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                          ×
-                        </span>
-                      </button>
+                    <div className="p-5 border-b border-solid border-gray-300 rounded-t">
+                      <h3 className="text-3xl font-semibold">Select a theme</h3>
                     </div>
                     {/*body*/}
-                    <div className="relative p-6 flex flex-row w-full justify-evenly">
+                    <div className="relative p-6 flex flex-row flex-wrap w-full justify-evenly">
                       <div
                         onClick={() => selectTheme("default")}
-                        className="h-20 w-20 hover:cursor-pointer hover:opacity-50 shadow rounded flex justify-center items-center bg-gray-700"
+                        className={THEME_CONTAINER + "bg-gray-700"}
                       >
                         <p className="font-sans text-white text-lg">Default</p>
                       </div>
                       <div
                         onClick={() => selectTheme("cute")}
-                        className="h-20 w-20 hover:cursor-pointer hover:opacity-50 shadow rounded flex justify-center items-center bg-red-200"
+                        className={THEME_CONTAINER + "bg-red-200"}
                       >
                         <p className="font-sans text-red-700 text-lg">Cute</p>
                       </div>
                       <div
                         onClick={() => selectTheme("hacker")}
-                        className="h-20 w-20 hover:cursor-pointer hover:opacity-50 shadow rounded flex justify-center items-center bg-black"
+                        className={THEME_CONTAINER + "bg-black"}
                       >
                         <p className="font-mono text-green text-lg">Hacker</p>
                       </div>
                       <div
                         onClick={() => selectTheme("sleek")}
-                        className="h-20 w-20 hover:cursor-pointer hover:opacity-50 shadow rounded flex justify-center items-center bg-yellow-200"
+                        className={THEME_CONTAINER + "bg-yellow-200"}
                       >
                         <p className="font-serif text-yellow-900 text-lg">
                           Sleek
@@ -120,7 +115,10 @@ function App() {
                       </div>
                       <div
                         onClick={() => selectTheme("pride")}
-                        className="h-20 w-20 hover:cursor-pointer hover:opacity-50 shadow rounded flex justify-center items-center bg-gradient-to-r from-blue-600 via-pink-600 to-red-600"
+                        className={
+                          THEME_CONTAINER +
+                          "bg-gradient-to-r from-blue-600 via-pink-600 to-red-600"
+                        }
                       >
                         <p className="font-sans font-bold text-white text-lg">
                           Pride
@@ -128,11 +126,10 @@ function App() {
                       </div>
                     </div>
                     {/*footer*/}
-                    <div className="flex items-center justify-end p-6 border-t border-solid border-gray-300 rounded-b">
+                    <div className="flex items-center justify-end p-4 border-t border-solid border-gray-300 rounded-b">
                       <button
-                        className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
+                        className="text-red-600 rounded font-medium px-6 py-2 text-lg outline-none focus:outline-none mr-1 mb-1 transition duration-500 ease-in-out hover:bg-red-200 hover:bg-opacity-30"
                         type="button"
-                        style={{ transition: "all .15s ease" }}
                         onClick={() => setShowModal(false)}
                       >
                         Cancel
@@ -146,7 +143,7 @@ function App() {
           ) : null}
           <button
             onClick={() => setShowModal(true)}
-            className="absolute bg-white h-10 w-10 bottom-10 left-10 rounded-full pb-2 shadow-lg hover:bg-gray-100"
+            className="absolute bg-white h-10 w-10 bottom-10 left-10 rounded-full pb-2 shadow-lg hover:bg-gray-100 focus:outline-none"
           >
             ...
           </button>

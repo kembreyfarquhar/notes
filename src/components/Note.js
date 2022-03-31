@@ -56,7 +56,7 @@ function Note({ history, theme }) {
   useEffect(() => {
     const thisNote = getSingleNote(title);
     setNote(thisNote[0]);
-  }, []);
+  }, [title]);
 
   const createMarkup = (html) => {
     return {

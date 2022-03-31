@@ -42,7 +42,7 @@ const styles = {
 
 function App() {
   const [theme, setTheme] = useState(themes.default);
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     console.log(`THEME: ${theme}`);
